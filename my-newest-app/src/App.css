@@ -1,0 +1,1062 @@
+body {
+     margin: 0;
+     font-family: "Barlow Condensed", sans-serif;
+     font-family: "Bellefair", serif;
+}
+
+.main-container {
+     min-height: 100vh;
+     background-repeat: no-repeat;
+     background-size: cover;
+     transition: background 0.2s ease-in-out;
+     padding-bottom: 40px;
+     position: relative;
+     overflow: hidden;
+}
+
+.whole-wrapper {
+     overflow: hidden;
+}
+
+input[type="radio"] {
+     display: none;
+}
+
+.inner-header-container {
+     display: flex;
+     justify-content: space-between;
+}
+
+.main-ul-container {
+     position: absolute;
+     left: 0;
+     right: 0;
+     width: 100%;
+     overflow: hidden;
+     display: flex;
+     justify-content: flex-end;
+     z-index: 100;
+}
+
+.ul-container {
+     position: absolute;
+     background: rgba(255, 255, 255, 0);
+     backdrop-filter: blur(20px);
+     -webkit-backdrop-filter: blur(20px);
+     right: 0;
+     margin-top: 0;
+     min-height: 120vh;
+     width: 200px;
+     list-style-type: none;
+     animation: toAppear 0.2s;
+     z-index: 5;
+     overflow: hidden;
+}
+
+.ul-container li {
+     font-size: 16px;
+     color: #fff;
+     text-decoration: none;
+     font-family: "Barlow Condensed", sans-serif;
+     text-transform: uppercase;
+     letter-spacing: 2.7px;
+     font-weight: 100;
+     cursor: pointer;
+}
+
+label {
+     height: 100%;
+     display: flex;
+     align-items: center;
+     cursor: pointer;
+}
+
+.ul-container li {
+     margin: 30px 0;
+}
+
+.ul-container li b {
+     font-weight: 600;
+     letter-spacing: 2.5px;
+     margin-right: 5px;
+}
+
+.close-icon {
+     display: flex;
+     justify-content: flex-end;
+     padding-right: 24px;
+}
+
+.line-desk {
+     display: none;
+}
+
+.logo-container img {
+     margin: 24px 0 0 24px;
+     width: 40px;
+     height: 40px;
+}
+
+.menu-container img {
+     width: 24px;
+     height: 21px;
+     margin-right: 24px;
+     margin-top: 33px;
+     cursor: pointer;
+}
+
+.home-page {
+     color: #fff;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     text-align: center;
+     padding: 0 24px;
+     padding-top: 30px;
+     margin: auto;
+     max-width: 370px;
+}
+
+.home-title {
+     text-transform: uppercase;
+     font-family: "Barlow Condensed", sans-serif;
+     font-size: 16px;
+     letter-spacing: 2.7px;
+     font-weight: 100;
+     margin-bottom: 0;
+}
+
+.huge-word {
+     font-size: 80px;
+     font-family: "Bellefair", serif;
+     font-weight: 100;
+     text-transform: uppercase;
+     margin-top: 18px;
+     color: #fff;
+}
+
+.home-info {
+     font-family: "Barlow Condensed", sans-serif;
+     color: #d0d6f9;
+     font-size: 15px;
+     line-height: 25px;
+     margin-top: 18px;
+}
+
+.white-circle {
+     width: 150px;
+     height: 150px;
+     background: #fff;
+     font-size: 20px;
+     border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.white-circle h2 {
+     letter-spacing: 1.25px;
+     color: #0b0d17;
+     font-weight: 100;
+     text-transform: uppercase;
+     font-size: 20px;
+}
+
+.explore-container {
+     margin-top: 55px;
+}
+
+.show {
+     transform: translate(0, 0);
+}
+
+.close {
+     transform: translate(100%, 0);
+     animation: toClose 0.2s forwards;
+}
+
+#menu-options {
+     appearance: none;
+     width: 0;
+     height: 0;
+     position: absolute;
+}
+
+.main-destination-title {
+     color: #fff;
+     font-family: "Barlow Condensed", sans-serif;
+     text-transform: uppercase;
+     font-weight: 100;
+     text-align: center;
+     font-size: 16px;
+     letter-spacing: 2.7px;
+}
+
+.main-destination-title b {
+     color: rgba(255, 255, 255, 0.236) !important;
+     margin-right: 7px;
+}
+
+.destination-container {
+     color: #fff;
+     text-align: center;
+     font-family: "Barlow Condensed", sans-serif;
+}
+
+.dest-main-container {
+     padding: 0 24px;
+}
+
+.image-desti-cont {
+     width: 170px;
+     height: 170px;
+     margin: auto;
+}
+
+.image-desti-cont img {
+     width: 100%;
+}
+
+.select-planets {
+     display: flex;
+     justify-content: center;
+     margin-top: 20px;
+}
+
+.select-planets label {
+     text-transform: uppercase;
+     font-size: 14px;
+     letter-spacing: 2.34px;
+     position: relative;
+     height: 40px;
+     flex-wrap: wrap;
+     justify-content: center;
+}
+
+.planet-option {
+     margin: 0 6px;
+}
+
+.select-planets input {
+     -webkit-appearance: none;
+     appearance: none;
+     position: absolute;
+     display: block;
+}
+
+.planet-underline {
+     position: absolute;
+     width: 0;
+     background: #979797;
+     height: 3px;
+     bottom: -2px;
+     transition: width 0.2s ease-in-out;
+}
+
+#planet-radio:checked + .planet-underline {
+     width: 100%;
+     background: #fff;
+}
+
+.select-planets label:hover .planet-underline {
+     width: 100%;
+}
+
+.planet-title {
+     font-family: "Bellefair", serif;
+     font-size: 56px;
+     font-weight: 100;
+     text-transform: uppercase;
+     margin: 0px 0;
+     margin-top: 23px;
+}
+
+.inner-details-cont h5 {
+     text-transform: uppercase;
+     font-weight: 100;
+     font-size: 14px;
+     letter-spacing: 2.36px;
+     margin-bottom: 0px;
+}
+
+.inner-details-cont p {
+     font-size: 28px;
+     font-family: "Bellefair", serif;
+     margin-top: 10px;
+     text-transform: uppercase;
+}
+
+.inner-details-cont {
+     border-top: 1px solid #383b4b;
+}
+
+.planet-description {
+     line-height: 25px;
+     color: #d0d6f9;
+     margin-top: 3px;
+     margin-bottom: 24px;
+}
+
+.details-container {
+     max-width: 373px;
+     margin: auto;
+}
+
+.crew-member-img {
+     height: 223px;
+     position: relative;
+}
+
+.crew-member-img img {
+     width: 100%;
+     height: 100%;
+     object-fit: contain;
+}
+
+.crew-container {
+     color: #fff;
+     padding: 0 20px;
+     max-width: 340px;
+     margin: auto;
+}
+
+.crew-main-title {
+     color: #fff;
+     text-transform: uppercase;
+     font-family: "Barlow Condensed", sans-serif;
+     font-size: 16px;
+     letter-spacing: 2.7px;
+     font-weight: 100;
+     text-align: center;
+     margin-bottom: 23px;
+}
+
+.crew-main-title b {
+     color: rgba(255, 255, 255, 0.236) !important;
+     font-weight: 200;
+}
+
+.crew-selector {
+     height: 223px;
+     width: 325px;
+     overflow: hidden;
+     margin: auto;
+}
+
+.crew-slider input {
+     display: none;
+}
+
+.crew-slider img {
+     height: 223px;
+}
+
+.crew-image {
+     width: 20%;
+     display: flex;
+     justify-content: center;
+     transition: 0.4s;
+}
+
+.crew-slider {
+     display: flex;
+     width: 500%;
+}
+
+.slider-label {
+     height: 10px;
+     width: 10px;
+     background: #979797;
+     border-radius: 50%;
+     margin-right: 15px;
+     transition: background 0.2s ease-in-out;
+}
+
+.active-slider {
+     background: #fff;
+}
+
+.crew-btn-container {
+     margin: auto;
+     display: flex;
+     justify-content: center;
+     padding-top: 30px;
+     border-top: 1px solid #383b4b;
+}
+
+#crew-selector1:checked ~ .image1 {
+     margin-left: 0%;
+}
+
+#crew-selector2:checked ~ .image1 {
+     margin-left: -20%;
+}
+
+#crew-selector3:checked ~ .image1 {
+     margin-left: -40%;
+}
+
+#crew-selector4:checked ~ .image1 {
+     margin-left: -60%;
+}
+
+.crew-role {
+     text-transform: uppercase;
+     font-weight: 100;
+     text-align: center;
+     font-size: 16px;
+     color: #979797;
+     margin-bottom: 0px;
+}
+
+.crew-name {
+     font-size: 24px;
+     text-transform: uppercase;
+     font-weight: 100;
+     text-align: center;
+     margin-top: 9px;
+     margin-bottom: 10px;
+}
+
+.crew-bio {
+     font-size: 15px;
+     line-height: 25px;
+     color: #D0D6F9;
+     text-align: center;
+     font-family: "Barlow Condensed", sans-serif;
+     margin-top: 3px;
+     letter-spacing: 1px;
+}
+
+.crew-info {
+     padding-top: 10px;
+}
+
+.technology-container {
+     color: #fff;
+}
+
+.main-cont-slider-tech {
+     overflow: hidden;
+     width: 100%;
+}
+
+.slider-tech {
+     display: flex;
+     width: 300%;
+}
+
+.slider-tech img {
+     width: 100%;
+}
+
+.tech-slide-img {
+     width: 33.33%;
+     transition: margin 0.2s ease-in-out;
+}
+
+.slider-tech input[type="radio"] {
+     display: none;
+}
+
+.first-tech {
+     overflow: hidden;
+     padding-right: -10px;
+}
+
+.first-tech img {
+     margin-right: -10px;
+}
+
+#tech-input1:checked ~ .first-tech {
+     margin-left: 0px;
+}
+
+#tech-input2:checked ~ .first-tech {
+     margin-left: -33.33%;
+}
+
+#tech-input3:checked ~ .first-tech {
+     margin-left: -66.66%;
+}
+
+.image-selector-tech {
+     display: flex;
+     justify-content: center;
+     margin-top: 26px;
+}
+
+.image-selector-tech label {
+     height: 40px;
+     width: 40px;
+     background-color: #000;
+     margin: 5px;
+     color: #fff;
+     border: 1px solid #fff;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 50%;
+     font-size: 16px;
+     transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.planet-white {
+     background: #fff !important;
+     color: #000 !important;
+}
+
+.tech-main-title {
+     color: #fff;
+     text-transform: uppercase;
+     font-family: "Barlow Condensed", sans-serif;
+     font-size: 16px;
+     letter-spacing: 2.7px;
+     font-weight: 100;
+     text-align: center;
+     margin-bottom: 23px;
+}
+
+.tech-main-title b {
+     color: rgba(255, 255, 255, 0.300) !important;
+     font-weight: 200;
+}
+
+.deep-details-tech {
+     text-align: center;
+}
+
+.the-title {
+     font-size: 14px;
+     letter-spacing: 2.36px;
+     font-family: "Barlow Condensed", sans-serif;
+     text-transform: uppercase;
+     font-weight: 100;
+     color: #D0D6F9;
+     margin-bottom: 10px;
+}
+
+.the-vehicle {
+     font-size: 24px;
+     text-transform: uppercase;
+     font-weight: 100;
+     margin-top: 0;
+     margin-bottom: 0;
+}
+
+.the-explanation {
+     font-family: "Barlow Condensed", sans-serif;
+     font-weight: 400;
+     color: #D0D6F9;
+     font-size: 15px;
+     line-height: 25px;
+}
+
+.tech-details-cont {
+     max-width: 340px;
+     margin: auto;
+}
+
+@media screen and (min-width: 750px) {
+     .ul-container {
+          position: relative;
+          transform: none;
+          animation: none;
+          min-height: auto;
+          height: auto;
+          display: flex;
+          width: 450px;
+          justify-content: space-evenly;
+          margin: 0;
+          background: rgba(255, 255, 255, 0.024);
+          backdrop-filter: blur(5px);
+          transition: none;
+          -webkit-backdrop-filter: blur(5px);
+     }
+     .ul-container li b {
+          display: none;
+     }
+     .ul-container li:not(.close-icon) {
+          margin: 0;
+          height: 96px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+     }
+     .ul-container li {
+          cursor: pointer;
+     }
+     .ul-container li {
+          font-size: 14px;
+     }
+     .menu-container,
+     .close-icon {
+          display: none;
+     }
+     .white-underline {
+          width: 0;
+          background: #979797;
+          height: 2.5px;
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          margin: auto;
+          transition: width 0.2s ease-in-out;
+     }
+     .ul-container li:hover .white-underline {
+          width: 100%;
+     }
+     .hover-circle {
+          width: 450px;
+          height: 450px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          background: transparent;
+          transition: background 0.2s ease-in-out;
+     }
+     .hover-circle.togray {
+          background: #9797972a;
+     }
+     .huge-word {
+          font-size: 150px;
+     }
+     .home-title {
+          font-size: 20px;
+     }
+     .home-info {
+          font-size: 16px;
+     }
+     .home-page {
+          padding-top: 94px;
+     }
+     .explore-container {
+          margin-top: 0;
+     }
+     .white-circle h2 {
+          font-size: 32px;
+     }
+     .white-circle {
+          width: 242px;
+          height: 242px;
+          cursor: pointer;
+     }
+     .desktop-underline:checked + .white-underline {
+          width: 100%;
+          background: #fff;
+     }
+     .image-desti-cont {
+          width: 300px;
+          height: 300px;
+     }
+     .details-container {
+          max-width: 573px;
+          padding-top: 15px;
+     }
+     .inner-details-cont {
+          display: flex;
+          justify-content: space-evenly;
+     }
+     .planet-description {
+          font-size: 16px;
+          line-height: 28px;
+          padding: 0 10px;
+          margin-bottom: 30px;
+     }
+     .inner-details-cont p {
+          margin-top: 14px;
+     }
+     .planet-title {
+          font-size: 80px;
+     }
+     .main-destination-title {
+          text-align: left;
+          padding-left: 30px;
+          font-size: 20px;
+          letter-spacing: 3.38px;
+     }
+     .dest-main-container {
+          padding-top: 35px;
+     }
+     .crew-container {
+          max-width: 456px;
+     }
+     .crew-member-details {
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column-reverse;
+     }
+     .inner-member-details {
+          display: flex;
+          flex-direction: column-reverse;
+     }
+     .crew-main-title {
+          text-align: left;
+          padding-left: 30px;
+          font-size: 20px;
+          letter-spacing: 3.38px;
+     }
+     .crew-role {
+          font-size: 24px;
+     }
+     .crew-name {
+          font-size: 40px;
+     }
+     .crew-bio {
+          font-size: 16px;
+          line-height: 28px;
+          min-height: 112px;
+     }
+     .crew-btn-container {
+          border: none;
+          padding-top: 20px;
+          margin-bottom: 30px;
+     }
+     .crew-selector {
+          height: 100%;
+          max-height: 100%;
+          width: 456px;
+     }
+     .crew-image {
+          margin-bottom: 0px;
+          align-content: flex-end;
+          overflow: hidden;
+     }
+     .crew-slider {
+          position: relative;
+          bottom: -90px;
+     }
+     .crew-slider img {
+          height: 100%;
+          max-width: 426px;
+          object-fit: contain;
+     }
+     .image-selector-tech {
+          margin-top: 42px;
+     }
+     .image-selector-tech label {
+          height: 60px;
+          width: 60px;
+          font-size: 24px;
+     }
+     .tech-details-cont {
+          max-width: 458px;
+     }
+     .the-title, .the-explanation {
+          font-size: 16px;
+     }
+     .the-vehicle {
+          font-size: 40px;
+          margin-top: 15px;
+     }
+     .the-explanation {
+          margin-top: 15px;
+     }
+     .deep-details-tech {
+          padding-top: 25px;
+     }
+}
+
+@media screen and (min-height: 1100px) {
+     .crew-selector {
+          position: relative;
+          bottom: -65px;
+     }
+}
+
+@media screen and (min-width: 850px) and (max-width: 1200px) {
+     .main-container {
+          background-position: center;
+     }
+}
+
+@media screen and (min-width: 1050px) {
+     .inner-header-container {
+          align-items: center;
+          padding-top: 35px;
+     }
+     .line-desk {
+          display: block;
+          width: 95%;
+          height: 1px;
+          background: #979797;
+          position: relative;
+          left: 40px;
+          z-index: 20;
+     }
+     .ul-container {
+          width: 750px;
+          justify-content: center;
+          background: rgba(255, 255, 255, 0.044);
+          backdrop-filter: blur(30px);
+     }
+     .ul-container li {
+          margin: 0 23px !important;
+     }
+     .ul-container li b {
+          display: block;
+     }
+     .logo-container img {
+          margin-top: 5px;
+          margin-left: 50px;
+     }
+     .home-page {
+          flex-wrap: nowrap;
+          min-width: 80%;
+          padding-top: 250px;
+     }
+     .inner-page,
+     .explore-container {
+          flex-basis: 50%;
+     }
+     .explore-container {
+          display: flex;
+          justify-content: center;
+     }
+     .inner-page {
+          text-align: left;
+     }
+     .home-title {
+          font-size: 28px;
+          margin-bottom: 20px;
+     }
+     .home-info {
+          font-size: 18px;
+          max-width: 444px;
+          line-height: 32px;
+     }
+     .main-destination-title {
+          font-size: 28px;
+          padding-left: 150px;
+          margin-top: 70px;
+          margin-bottom: 50px;
+     }
+     .dest-main-container {
+          display: flex;
+          justify-content: center;
+          max-width: 1125px;
+          margin: auto;
+     }
+     .image-desti-cont,
+     .details-container {
+          flex-basis: 50%;
+          padding: 0 15px;
+     }
+     .image-desti-cont {
+          margin-top: 0;
+     }
+     .details-container {
+          text-align: left;
+          max-width: 445px;
+          height: 472px;
+     }
+     .select-planets {
+          justify-content: flex-start;
+     }
+     .inner-details-cont {
+          justify-content: flex-start;
+     }
+     .inner-details-cont div:not(:first-child) {
+          margin-left: 50px;
+     }
+     .image-desti-cont {
+          max-width: 445px;
+     }
+     .image-desti-cont img {
+          width: 445px;
+          height: 445px;
+     }
+     .planet-title {
+          font-size: 100px;
+          margin-top: 30px;
+          margin-bottom: 16px;
+     }
+     .planet-description {
+          font-size: 18px;
+          line-height: 32px;
+          padding-left: 0;
+     }
+     .select-planets label {
+          font-size: 16px;
+     }
+     .planet-option {
+          margin: 0 14px;
+     }
+     .planet-option:first-child {
+          margin-left: 0;
+     }
+     .crew-member-details {
+          flex-wrap: nowrap;
+          flex-direction: row-reverse;
+     }
+     .crew-container {
+          max-width: 1350px;
+     }
+     .inner-member-details {
+          max-width: 488px;
+     }
+     .crew-role, .crew-name, .crew-bio {
+          text-align: left;
+     }
+     .crew-name {
+          font-size: 56px;
+          margin-top: 25px;
+     }
+     .crew-role {
+          font-size: 32px;
+     }
+     .crew-bio {
+          font-size: 18px;
+          line-height: 32px;
+          letter-spacing: 1px;
+          margin-top: 28px;
+     }
+     .crew-btn-container {
+          margin: 0;
+          padding: 0;
+          margin-top: 60px;
+          justify-content: left;
+     }
+     .crew-selector {
+          width: 600px;
+          margin-right: 0;
+          position: absolute;
+          bottom: 0px;
+          display: flex;
+          align-items: flex-end;
+     }
+     .crew-member-details::before {
+          content: '';
+          width: 600px;
+          height: 500px;
+     }
+     .crew-slider {
+          bottom: -20px;
+     }
+     .crew-image {
+          padding: 0 0px;
+          width: 600px;
+     }
+     #crew-selector1:checked ~ .image1 {
+          margin-left: 0;
+     }
+     
+     #crew-selector2:checked ~ .image1 {
+          margin-left: -600px;
+     }
+     
+     #crew-selector3:checked ~ .image1 {
+          margin-left: -1200px;
+     }
+     
+     #crew-selector4:checked ~ .image1 {
+          margin-left: -1800px;
+     }
+     .crew-image img {
+          max-width: 500px;
+          margin-bottom: -120px;
+     }
+     .crew-member-details {
+          padding: 0 0px;
+          justify-content: space-between;
+     }
+     .main-container {
+          overflow: hidden;
+     }
+     .crew-page {
+          padding-bottom: 50px;
+     }
+     .crew-main-title {
+          font-size: 28px;
+          padding-left: 150px;
+          margin-top: 70px;
+          margin-bottom: 50px;
+     }
+     .crew-main-title b {
+          font-weight: 700;
+     }
+     .tech-flex-container {
+          display: flex;
+          flex-direction: row-reverse;
+          justify-content: space-between;
+          width: 100%;
+          padding-bottom: 60px;
+     }
+     .main-cont-slider-tech {
+          width: 550px;
+     }
+     .tech-details-cont {
+          display: flex;
+          max-width: 630px;
+          justify-content: flex-start;
+          margin-left: 120px;
+     }
+     .image-selector-tech {
+          flex-direction: column;
+          margin-top: 0;
+          margin-right: 50px;
+     }
+     .deep-details-tech {
+          text-align: left;
+          padding-top: 0;
+     }
+     .tech-main-title {
+          font-size: 28px;
+          padding-left: 150px;
+          margin-top: 70px;
+          margin-bottom: 50px;
+          text-align: left;
+     }
+     .image-selector-tech label {
+          height: 80px;
+          width: 80px;
+          margin: 15px 0;
+     }
+     .the-vehicle {
+          font-size: 56px;
+     }
+     .the-explanation {
+          font-size: 18px;
+          line-height: 32px;
+          max-width: 444px;
+     }
+}
+
+@media screen and (min-width: 1200px) {
+     .ul-container {
+          width: 750px;
+          justify-content: flex-start;
+          padding-left: 100px;
+     }
+     .crew-member-details {
+          padding: 0 30px;
+     }
+}
+
+@keyframes toClose {
+     0% {
+          transform: translate(0, 0);
+          opacity: 1;
+     }
+     99% {
+          transform: translate(100%, 0);
+          opacity: 0;
+     }
+     100% {
+          transform: scale(0.001);
+     }
+}
+
+@keyframes toAppear {
+     0% {
+          transform: translate(100%, 0);
+          opacity: 0;
+     }
+     100% {
+          transform: translate(0, 0);
+          opacity: 1;
+     }
+}
