@@ -6,7 +6,7 @@ import SizeProvider from "./context/sizeContext";
 function App() {
      return (
           <SizeProvider>
-               <Router>
+               <Router basename="SpaceApp">
                     <div className="whole-wrapper">
                          <MainSpace />
                     </div>
